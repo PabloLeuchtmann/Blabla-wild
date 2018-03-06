@@ -24,34 +24,38 @@
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Destination"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/departureText"
-        tools:layout_editor_absoluteX="85dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureText" />
 
     <EditText
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
-        android:inputType="date"
         android:hint="01/03/18"
-        app:layout_constraintTop_toBottomOf="@+id/nameText"
-        tools:layout_editor_absoluteX="85dp" />
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="8dp"
         android:text="SEARCH"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateText"
-        tools:layout_editor_absoluteX="148dp" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/textViewcongrats"
