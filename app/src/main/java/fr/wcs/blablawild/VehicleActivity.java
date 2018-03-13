@@ -52,9 +52,13 @@ public class VehicleActivity extends AppCompatActivity {
                                 String modelcar = model.getText().toString();
                                 String brandcar = brand.getText().toString();
 
-                                int kmvoit = Integer.parseInt(kmcar);
+                                int km = 0;
 
-                                VehiclesCar supercar = new VehiclesCar(modelcar,brandcar,kmvoit);
+                                if (!kmcar.isEmpty()){
+
+                                km = Integer.parseInt(kmcar);}
+
+                                VehiclesCar supercar = new VehiclesCar(modelcar,brandcar,km);
 
                                 Toast.makeText(VehicleActivity.this,supercar.getDescription(), Toast.LENGTH_SHORT).show();
                             }
@@ -74,9 +78,14 @@ public class VehicleActivity extends AppCompatActivity {
                                     String brandboat = brand.getText().toString();
                                     String hourboat = hour.getText().toString();
 
-                                    int hourbat = Integer.parseInt(hourboat);
+                                    int hour = 0;
 
-                                    VehiclesBoat superboat = new VehiclesBoat(modelboat,brandboat,hourbat);
+                                    if (!hourboat.isEmpty()){
+
+                                        hour = Integer.parseInt(hourboat);}
+
+
+                                    VehiclesBoat superboat = new VehiclesBoat(modelboat,brandboat,hour);
 
                                     Toast.makeText(VehicleActivity.this,superboat.getDescription(), Toast.LENGTH_SHORT).show();
                                 }
@@ -99,9 +108,13 @@ public class VehicleActivity extends AppCompatActivity {
                             String brandplane = brand.getText().toString();
                             String speedplane = speed.getText().toString();
 
-                            int speedpla = Integer.parseInt(speedplane);
+                            int speed = 0;
 
-                            VehiclesPlane superplane = new VehiclesPlane(modelplane,brandplane,speedpla);
+                            if (!speedplane.isEmpty()){
+
+                                speed = Integer.parseInt(speedplane);}
+
+                            VehiclesPlane superplane = new VehiclesPlane(modelplane,brandplane,speed);
 
                             Toast.makeText(VehicleActivity.this,superplane.getDescription(), Toast.LENGTH_SHORT).show();
                         }
