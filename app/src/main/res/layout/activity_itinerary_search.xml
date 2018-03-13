@@ -30,7 +30,8 @@
         android:hint="Destination"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/departureText" />
+        app:layout_constraintTop_toBottomOf="@+id/departureText"
+        android:layout_marginLeft="84dp" />
 
     <EditText
         android:id="@+id/dateText"
@@ -39,10 +40,14 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="56dp"
         android:ems="10"
+        android:focusable="false"
         android:hint="01/03/18"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        android:layout_marginLeft="84dp" />
+
+
 
     <Button
         android:id="@+id/searchButton"
@@ -55,7 +60,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateText"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.351"
+        android:layout_marginLeft="148dp" />
 
     <TextView
         android:id="@+id/textViewcongrats"
@@ -67,5 +73,6 @@
         android:enabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchButton" />
+        app:layout_constraintTop_toBottomOf="@+id/searchButton"
+        android:layout_marginLeft="56dp" />
 </android.support.constraint.ConstraintLayout>
