@@ -40,6 +40,7 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 TextView congrats = findViewById(R.id.textViewcongrats);
                 String condition1 = nom.getText().toString();
                 String condition2 = departure.getText().toString();
+                String dateb = datecal.getText().toString();
 
                 if (condition1.equals("") || condition2.equals("")) {
                     Toast.makeText(ItinerarySearchActivity.this, " Sorry, empty fields ! ", Toast.LENGTH_SHORT).show();
@@ -48,8 +49,8 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
                     Intent searchIt = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
 
-                    searchIt.putExtra(nomstring, nom.getText().toString());
-                    searchIt.putExtra(departurestring, departure.getText().toString());
+                    searchIt.putExtra("Extra", new SearchModel(condition1,condition2,dateb));
+
 
                     startActivity(searchIt);
                 }
