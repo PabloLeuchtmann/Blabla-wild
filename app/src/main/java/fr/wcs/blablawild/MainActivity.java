@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonIt = null;
     private Button buttonSc = null;
+
+    private Button buttonGo = null;
+    private Button buttonVh = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,28 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
+        });
+
+
+        buttonGo = (Button) findViewById(R.id.buttonVehicle);
+        buttonGo.setOnClickListener(new View.OnClickListener (){
+
+            Intent vehicles = new Intent(MainActivity.this, VehicleActivity.class);
+
+
+
+            @Override
+            public void onClick(View view) {
+
+                startActivity(vehicles);
+
+            }
+
+
+
+
+
+
         });
 
 
